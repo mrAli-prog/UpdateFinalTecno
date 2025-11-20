@@ -7,9 +7,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="./assets/css/fontiran.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+   <link rel="stylesheet" href="/karen/TeamWeb/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/karen/TeamWeb/assets/css/fontiran.css">
+    <link rel="stylesheet" href="/karen/TeamWeb/assets/css/style.css">
     <title>products</title>
 </head>
 <body id="body" onload="swiper(),Share()" onscroll="fadeOutScroll(),defultBody(),positionNav(),more(),moreProduct()">
@@ -347,7 +347,7 @@
                             <img src="<?= $base ?>/<?php echo $imgUrl; ?>" alt="NotLoad">
                         </div>
                     </div>
-                        <div class="FiveImg" style="display: flex;flex-direction: row;align-items: center;justify-content: center;">
+                        <div class="FiveImg">
                             <?php
                             $imgsql = "SELECT * FROM product_images WHERE product_id = ?";
                             if ($stmt = $conn->prepare($imgsql)) {
@@ -489,7 +489,7 @@
         </div>
         <div class="bodyTab">
             <div class="cardBodyTab" id="cardBodyTab">
-                <div style="display: flex;flex-direction: row;align-items: center;">
+                <div class="CardColumnBoTab" style="">
                     <div class="BodyCardImgStyle" style="width: 300px;height: 300px;">
                         <img src="<?= $base ?>/<?php echo $imgUrl; ?>" alt="NotLoad" style="width: 100px;height: 100px;margin-left: 10px;">
                     </div>
@@ -547,8 +547,8 @@
                 </div>
                 <?php } ?>
             </div>
-            <hr style="width: 1020px;margin-bottom: 5px;">
-            <hr style="width: 1020px;margin-bottom: 10px;">
+            <hr class="Mosha20Rem">
+            <hr class="Mosha20Rem">
             <div class="Naghd">
                 <div class="titleNaghd">
                     <span></span>
@@ -566,8 +566,8 @@
                     </div>
                 </div>
             </div>
-            <hr style="width: 1020px;margin-bottom: 5px;margin-top: 15px;">
-            <hr style="width: 1020px;margin-bottom: 10px;">
+            <hr class="Mosha20Rem">
+            <hr class="Mosha20Rem">
             <div class="comment" id="Comment">
                 <div class="titleComment">
                     <span></span>
@@ -627,7 +627,7 @@
                         <div style="margin-bottom: 15px;font-size: 14px;">
                             <p style="color: blue;"><?php echo $row['comment']; ?></p>
                         </div>
-                        <div class="footerComment" style="display: flex;flex-direction: row;justify-content: center;align-items: center;">
+                        <div class="footerComment">
                             <p style="width: 500px;display: flex;justify-content: center;align-items: center;padding: 10px;color: gray;font-size: 14px;">این نظر برای شما مفید بود</p>
                             <div class="likeUnlike" style="width: 500px;display: flex;flex-direction: row;justify-content: center;align-items: center;">
                                 <span>
@@ -737,8 +737,7 @@
                             </div>
                         </div>
                     </div>
-                    <div style="width: 320px;display: flex;justify-content: center;align-items: center;flex-direction: column;
-                    margin-top: 18px;border-radius: 20px;box-shadow: 0px 0px 5px darkgray;">
+                    <div class="CardCommentBootom">
                         <div style="display: flex;flex-direction: row;font-size: 14px;margin-top: 18px;align-items: center;">
                             <i class="bi bi-chat-dots" style="margin-left: 8px;"></i>
                             <p>نظر خود را درباره این محصول بنویسید</p>
