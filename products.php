@@ -490,8 +490,8 @@
         <div class="bodyTab">
             <div class="cardBodyTab" id="cardBodyTab">
                 <div class="CardColumnBoTab" style="">
-                    <div class="BodyCardImgStyle" style="width: 300px;height: 300px;">
-                        <img src="<?= $base ?>/<?php echo $imgUrl; ?>" alt="NotLoad" style="width: 100px;height: 100px;margin-left: 10px;">
+                    <div class="BodyCardImgStyle">
+                        <img src="<?= $base ?>/<?php echo $imgUrl; ?>" alt="NotLoad">
                     </div>
                     <div class="ColorPallete" style="display: flex;flex-direction: column;font-size: 14px;">
                         <p style="margin-bottom: 15px;"><?php echo htmlspecialchars($itemName); ?> </p>

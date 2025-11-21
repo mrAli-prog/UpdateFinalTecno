@@ -548,6 +548,7 @@ div.tooltip-up{
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 50%;
 }
 
 .main .slider-container .controls .mainButton .mainArrow .prev:hover{
@@ -556,6 +557,7 @@ div.tooltip-up{
 
 .main .slider-container .controls .mainButton .mainArrow .prev i{
     font-size: 30px;
+    display: flex;
 }
 
 .main .slider-container .controls .mainButton .mainArrow .next{
@@ -565,10 +567,12 @@ div.tooltip-up{
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 50%;
 }
 
 .main .slider-container .controls .mainButton .mainArrow .next i{
     font-size: 30px;
+    display: flex;
 }
 
 .main .slider-container .controls .mainButton .mainArrow .next:hover{
@@ -796,6 +800,7 @@ div.tooltip-up{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
 }
 
 #left-candt{
@@ -2711,6 +2716,11 @@ div.tooltip-up{
     transition: opacity 0.3s;
 }
 
+.BodyCardImgStyle img{
+    width: 300px;
+    height: 300px;
+}
+
 #ratingStars img {
     margin-right: 10px;
     transition: all 0.15s linear;
@@ -3963,6 +3973,17 @@ div.tooltip-up{
     .Moshakhasat .titleMoshakhasat {
         width: 90%;
     }
+    #header-candt{
+        flex-direction: row;
+        padding: 11px 20px;
+        height: 50px;
+    }
+    .product-box-candt {
+        flex-direction: column-reverse;
+    }
+    .main .computerAndTools {
+        height: 310px;
+    }
     .BodyCardImgStyle{
         width: 100%;
         height: 100%;
@@ -4268,9 +4289,9 @@ div.tooltip-up{
         margin: 15px auto;
     }
 
-    .BodyCardImgStyle{
-        width: 300px;
-        height: 300px;
+    .BodyCardImgStyle img{
+        width: 100%;
+        height: 100%;
     }
 
     .bodyTab {
@@ -5253,8 +5274,8 @@ div.tooltip-up{
         flex-direction: column;
     }
     .BodyCardImgStyle{
-        width: 300px;
-        height: 300px;
+        width: 100%;
+        height: 100%;
     }
     .miniHeader {
         display: none;
@@ -5507,6 +5528,7 @@ div.tooltip-up{
     .main .underThreeLaptop {
         width: 100%;
         height: 145px;
+        margin-bottom: 20px;
     }
 
     .main .slider-container {
@@ -5687,11 +5709,12 @@ div.tooltip-up{
     .main .underThreeLaptop {
         display: flex;
         flex-direction: column;
+        height: auto;
     }
     .main .underThreeLaptop img {
-    width: 90%;
-    height: 75%;
-    border-radius: 50px;
+        width: 90%;
+        height: 75%;
+        border-radius: 50px;
     }
 
     .line{
@@ -5810,11 +5833,11 @@ div.tooltip-up{
     }
 
     .main .slider-container .controls .mainButton .mainArrow .prev {
-        display: none;
+        display: flex;
     }
 
     .main .slider-container .controls .mainButton .mainArrow .next {
-        display: none;
+        display: flex;
     }
 
     .main .bartarPhone {
@@ -5844,7 +5867,7 @@ div.tooltip-up{
     .main .parchamdaran {
         max-width: 100%;
         height: 230px;
-        margin: 20px auto;
+        margin: 60px auto;
         border-radius: 35px;
         display: flex;
         justify-content: center;
